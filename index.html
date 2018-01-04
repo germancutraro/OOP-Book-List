@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookList POO JS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+  <style>
+    .output {display: none;}
+    .success, .error {
+      color: #fff;
+      padding: 1px;
+      margin: 5px 0 15px 0;
+      text-align: center;
+    }
+    .success {
+      background-color: #5cb85c;
+    }
+    .error {
+      background-color: #d9534f;
+    }
+    .message {
+      margin-top: 1.5em;
+      font-size: 18px;
+    }
+    .show {
+      display: block;
+    }
+    
+  </style>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <div id="output" class="output">
+      <p class="message"></p>
+    </div>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+          <label for=""></label> 
+          <input type="submit" value="SUBMIT">
+      </div>
+    </form>
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+
+      </tbody>  
+    </table>
+  </div>
+  <!-- Script -->
+  <script src="es6.js"></script>
+</body>
+</html> 
